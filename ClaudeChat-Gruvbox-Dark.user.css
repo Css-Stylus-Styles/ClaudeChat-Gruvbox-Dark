@@ -527,8 +527,7 @@ higher values for hard  */
   /* Html and body tags  */
   html,
   body {
-    background: var(--bg-dark) !important;
-
+    background: var(--bg-def-dark) !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;

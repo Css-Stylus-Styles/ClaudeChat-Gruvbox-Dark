@@ -72,26 +72,15 @@ The theme uses the authentic Gruvbox dark color scheme:
 
 ## Development
 
-### Tech Stack
-
-- **Preprocessor**: Stylus
-- **Target Domain**: `claude.ai`
-- **Linting**: stylelint
-
 ### Code Conventions
 
+- **Language**: Stylus preprocessor
+- **Target Domain**: `claude.ai`
 - **Indentation**: 4 spaces
 - **Selectors**: Use `!important` on properties for override priority
 - **Nesting**: Extensive use of Stylus nesting for pseudo-classes
 - **Transitions**: All visual changes should be animated
 - **Font Rendering**: Antialiased text with optimized legibility
-
-### Building & Linting
-
-```bash
-# Lint the CSS file
-stylelint ClaudeChat-Gruvbox-Dark.user.css
-```
 
 ### Commit Message Format
 

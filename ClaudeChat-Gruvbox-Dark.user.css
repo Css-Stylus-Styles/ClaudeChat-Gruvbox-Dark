@@ -533,32 +533,36 @@ higher values for hard  */
     text-rendering: optimizeLegibility !important;
   }
 
-  /* FRONT PAGE  */
+  /* ============================================
+     INPUT BAR STYLES
+     Main chat input area and all child elements
+     ============================================ */
 
-  /* Main input bar container */
+  /* Main input bar container - outer wrapper */
   div.query-bar,
   .bg-bg-000 {
-    background-color: var(--bg-def-dark) !important;
-    border: 3px solid var(--bg3-dark) !important;
+    background-color: var(--bg2-dark) !important;
+    border: 2px solid var(--bg3-dark) !important;
     border-radius: 20px !important;
     box-shadow: none !important;
     transition: all 0.3s ease-in-out !important;
   }
 
-  /* Input bar hover and focus states */
+  /* Input bar hover state - subtle border color change */
   div.query-bar:hover,
   .bg-bg-000:hover {
     border-color: var(--bg4-dark) !important;
     box-shadow: none !important;
   }
 
+  /* Input bar focus state - using muted blue instead of overpowering green */
   div.query-bar:focus-within,
   .bg-bg-000:focus-within {
-    border-color: var(--faded-green) !important;
+    border-color: var(--faded-blue) !important;
     box-shadow: none !important;
   }
 
-  /* Contenteditable input area */
+  /* Contenteditable text input area */
   .ProseMirror,
   [contenteditable="true"][role="textbox"] {
     color: var(--text-offyellowish) !important;
@@ -570,7 +574,7 @@ higher values for hard  */
     text-rendering: optimizeLegibility !important;
   }
 
-  /* Placeholder text */
+  /* Placeholder text styling */
   .ProseMirror .is-editor-empty::before,
   [data-placeholder]:empty::before {
     color: var(--text--veryfade) !important;
@@ -578,7 +582,7 @@ higher values for hard  */
     font-weight: 400 !important;
   }
 
-  /* Plus/attachment button */
+  /* Plus/attachment button - left side of input bar */
   button[aria-label="Toggle menu"],
   button[id^="_r_"][aria-haspopup="menu"] {
     color: var(--text--faded) !important;
@@ -587,7 +591,7 @@ higher values for hard  */
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
     &:hover {
-      color: var(--faded-green) !important;
+      color: var(--faded-blue) !important;
       background: var(--bg-dark-new) !important;
     }
 
@@ -596,15 +600,15 @@ higher values for hard  */
     }
 
     &:hover svg {
-      color: var(--faded-green) !important;
+      color: var(--faded-blue) !important;
     }
   }
 
-  /* Model selector button */
+  /* Model selector button - shows current model (e.g., "Haiku 4.5") */
   button[data-testid="model-selector-dropdown"] {
-    color: var(--dim-green) !important;
+    color: var(--text--faded) !important;
     background: var(--bg-dark-new) !important;
-    border: 1px solid var(--bg2-dark) !important;
+    border: 1px solid var(--bg3-dark) !important;
     border-radius: 9999px !important;
     font-size: 12px !important;
     font-weight: 500 !important;
@@ -615,23 +619,22 @@ higher values for hard  */
     text-rendering: optimizeLegibility !important;
 
     &:hover {
-      color: var(--faded-green) !important;
-      background: var(--bg-def-dark) !important;
-      border-color: var(--text--faded) !important;
+      color: var(--faded-blue) !important;
+      background: var(--bg-dark) !important;
+      border-color: var(--bg4-dark) !important;
       transform: translateY(-1px) !important;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     }
 
     svg {
-      color: var(--dim-green) !important;
+      color: var(--text--faded) !important;
     }
 
     &:hover svg {
-      color: var(--faded-green) !important;
+      color: var(--faded-blue) !important;
     }
   }
 
-  /* Send/submit button area */
+  /* Send/submit button - right side of input bar */
   button[data-state="closed"] {
     color: var(--text--faded) !important;
     background: transparent !important;
@@ -639,7 +642,7 @@ higher values for hard  */
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
     &:hover {
-      color: var(--faded-green) !important;
+      color: var(--faded-blue) !important;
       background: var(--bg-dark-new) !important;
     }
 
@@ -648,9 +651,12 @@ higher values for hard  */
     }
 
     &:hover svg rect {
-      fill: var(--faded-green) !important;
+      fill: var(--faded-blue) !important;
     }
   }
+
+  /* END INPUT BAR STYLES */
+  /* ============================================ */
 
   /* Text Area Span  */
   .relative>span {

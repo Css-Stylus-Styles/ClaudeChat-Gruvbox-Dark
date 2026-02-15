@@ -527,7 +527,8 @@ higher values for hard  */
   /* Html and body tags  */
   html,
   body {
-    background: #171718 !important;
+    background: var(--bg-dark) !important;
+
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
@@ -942,6 +943,14 @@ Loading Fonts from the web for  this
     [data-theme=claude][data-mode=dark] .font-display {
       opacity: 0 !important;
     }
+  }
+
+  /* ============================================
+     HIDE ELEMENTS SECTION
+     Add any element selectors here to hide them
+     ============================================ */
+  [data-theme=claude][data-mode=dark] .font-small {
+    opacity: 0 !important;
   }
 
   /* Sidebar background */

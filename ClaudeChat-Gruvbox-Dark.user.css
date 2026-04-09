@@ -574,7 +574,48 @@ background-color : var(--bg-def-dark) !important;
         }
     }
 
+/* model backgorund */
 
+
+/* model selector backgorund where the models are shown  */
+div#_r_is_ > div:nth-of-type(2){
+    background : var(--bg-def-dark) !important ; 
+}
+
+/* Model selector text (Descriptions of models and when and how to use them )  */
+div:nth-of-type(n) > div[role='menuitem']  .mt-1.pr-4.text-text-500.text-xs , [class='text-text-500 text-xs mt-1']{
+    color : var(--text--veryfade) !important ;
+}
+
+/* Model names  */
+div:nth-of-type(n) > div[role='menuitem'] .font-ui , .min-w-0 > .text-sm{
+    color : var(--text-normal) !important;
+    font-weight: 700 !important;
+}
+/* More Models text  */
+div#_r_j8_ > .text-sm { 
+color : var(--text-offwhite-faded) !important ; 
+
+&:hover{
+    color : var(--faded-green) !important ; 
+}
+
+}
+
+
+
+
+/* Prompt send button  */
+
+
+
+
+
+/*
+=============================================================================
+    Home Page Pill Text (Write, Learn, Code, etc.)
+============================================================================= 
+*/
 
 /* Buttons on the home page Write  , Learn , Code and more  */
 /* Home page buttons */
@@ -590,9 +631,19 @@ li[id='category-tab-0' i] button[role='tab' i],
     }
 }
 
+/* Buttons on the home page Write  , Learn , Code and more  */
+/* Buttons pills border radius  */
+/* Buttons  , border colors  */
+li:nth-of-type(n) > button[role='tab']{
+    border-radius: 6rem !important;
+    padding : 0em  1em !important ; 
+}
+
+/* Buttons on the home page Write  , Learn , Code and more  */
 /* Text of the hompage pills   */
 [role] [role='presentation']:nth-of-type(n) [class] span:nth-of-type(n) {
 
+    color: var(--text-offwhite-faded) !important;
     &:hover{
         font-weight: 600 !important;
         color: var(--text-offwhite-faded) !important;
